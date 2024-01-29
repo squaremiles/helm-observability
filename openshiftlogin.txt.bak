@@ -1,0 +1,1 @@
+oc login --token=sha256~Ft7SBQptWuhua0a2evtsg9p7Ces2nriB1fQF_1F823g --server=https://api.sandbox-m4.g2pi.p1.openshiftapps.com:6443

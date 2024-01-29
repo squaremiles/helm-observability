@@ -1,0 +1,19 @@
+oc login --token=sha256~Ft7SBQptWuhua0a2evtsg9p7Ces2nriB1fQF_1F823g --server=https://api.sandbox-m4.g2pi.p1.openshiftapps.com:6443
+
+
+oc create secret generic quay.io --from-file=.dockerconfigjson=~/.docker/config.json --type=kubernetes.io/dockerconfigjson
+
+
+oc secrets link default quay.io --for=pull
+
+
+
+oc expose svc helm-chart-demo
+
+
+
+http://helm-squaremiles-release-1-connectingtokabi-dev.apps.sandbox-m4.g2pi.p1.openshiftapps.com/
+
+
+
+https://www.masterspringboot.com/cloud/openshift/springboot-on-kubernetes-with-helm-charts/
